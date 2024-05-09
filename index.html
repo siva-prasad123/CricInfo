@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Cricket Data</title>
+</head>
+<body>
+    <h1>Live Cricket Data</h1>
+    <p>Runs in over: {{ data.runs_in_over }}</p>
+    <p>Wickets: {{ data.wickets }}</p>
+    <p>Players' scores:</p>
+    <ul>
+    {% for player, score in data.players_scores.items() %}
+        <li>{{ player }}: {{ score }}</li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
