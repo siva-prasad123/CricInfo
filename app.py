@@ -9,7 +9,7 @@ def display_cricket_data():
     # Fetch live cricket data
     url = "https://crex.live/scoreboard/PBV/1L8/1st-Match/MP/MQ/fr-vs-mlt-1st-match-mdina-cup-t20-2024/live"
     data = fetch_live_cricket_data(url)
-    return render_template('cricket_data.html', data=data)
+    return render_template('index.html', data=data)
 
 if __name__ == '__main__':
     app.run(debug=True)
